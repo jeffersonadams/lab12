@@ -1,0 +1,51 @@
+body {
+  background-color: cyan;
+}
+.container{
+  background-color: white;
+  width: 400px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  border-radius: 2%;
+  padding: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
+  transition: box-shadow 1s;
+}
+.container:hover{
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+input[type="text"] {
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 10px;
+  display: block;
+}
+.removeBttn {
+  width: 100px;
+  max-width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.addBttn {
+  width: 100px;
+  max-width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.addInput {
+  width: 150px;
+  height: 20px;
+  margin-left: 125px;
+  margin-right: 125px;
+}
+.tasks{
+  padding-left: 75px;
+  text-align: left;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>TO DO LIST</title>
+</head>
+<body ng-app="myApp" ng-controller="toDoCtrl">
+  <div class="container">
+    <input type="text" ng-model="filter"  placeholder="filter contents.." class="addInput">
+    <br>
+    <div ng-repeat="task in toDoList | filter: filter" class="tasks">
+      <input type="checkbox" ng-model="task.done"> <span ng-bind="task.toDoText"></span>
+    </div>
+    <form ng-submit="toDoAdd()">
+      <input type="text" ng-model="toDoInput"  placeholder="Add New" class="addInput">
+      <input type="submit" value="Add New" class="addBttn">
+    </form>
+    <button ng-click="remove()" class="removeBttn">Remove marked</button>
+  </div>
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
